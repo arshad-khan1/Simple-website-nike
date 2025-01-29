@@ -1,0 +1,375 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====Scroll Bar=============================================================== */
+
+html {
+  scrollbar-width: thin; /* For Firefox: Thin scrollbar */
+  scrollbar-color: #888 #f4f4f4; /* Thumb color and track color */
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  height: 8px; /* Height of the horizontal scrollbar */
+  width: 8px; /* Width of the vertical scrollbar */
+}
+
+html::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Background color of the track */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+  border: 2px solid #f4f4f4; /* Space around the thumb for contrast */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker thumb on hover */
+}
+
+/* ============================================================================== */
+
+nav {
+  /* background-color: #ebebeb; */
+  /* background: linear-gradient(to bottom, #424242, #000000); */
+  color: #282828;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 100px;
+}
+
+#logo img {
+  height: 50px;
+  width: 100px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+nav h1 {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 30px;
+  font-weight: 800;
+  /* margin: 0; */
+}
+
+nav p {
+  font-weight: 600;
+}
+
+nav p:hover {
+  cursor: pointer;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 1s;
+  text-decoration: underline;
+  /* margin: 0; */
+  /* padding-top: 4px; */
+}
+
+#hero {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(115, 115, 115, 0.5)),
+    url("https://wallpapers.com/images/hd/cool-nike-shoe-ft6gor5zjwt950u2.jpg")
+      no-repeat center center/cover;
+  color: white; /* Ensure text is visible on the dark background */
+  height: 93vh; /* Full viewport height */
+}
+
+#hero p {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 900;
+  font-size: 130px;
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  color: #bcbcbc;
+  text-shadow: 4px 4px 10px rgba(99, 99, 99, 0.8);
+}
+
+#fire-run {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#fire-run h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 0;
+  /* letter-spacing: 2px; */
+  word-spacing: -20px;
+  font-family: "Rubik Mono One", monospace;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+#fire-run p {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+  letter-spacing: 0px;
+}
+
+#fire-run button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 25px;
+  border-radius: 40px;
+  background-color: #28282b;
+  color: azure;
+  font-family: monospace;
+}
+
+#fire-run button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #28282b;
+  transition: ease;
+  transition-duration: 500ms;
+}
+
+/* Shoes Shop Section */
+#shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 100px;
+  gap: 10px;
+}
+
+/* Shoes Card Section */
+#shoes-card {
+  /* background-color: aquamarine; */
+  /* height: 450px; */
+  width: 300px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#shoes-card img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#shoes-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 5px;
+}
+
+#shoes-card h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#shoes-card h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2c;
+}
+
+#shoes-card p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+  color: #2b2b2b;
+  padding-top: 3px;
+}
+
+#shoes-card button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background-color: white;
+  color: #28282b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: fit-content;
+  margin-top: 10px;
+}
+
+#shoes-card button:hover {
+  color: white;
+  background-color: #282828;
+  transition: ease;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+/* =======Shop by Sports ========================================*/
+
+#shop-by-sport {
+  padding: 0px 100px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#shop-by-sport h1 {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Gill ", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 10px;
+}
+
+#sports-section {
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  gap: 40px 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sports Card */
+
+#sports-card {
+  position: relative;
+  /* background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(226, 17, 17, 0.7)); */
+  background-color: rgb(62, 62, 62);
+  width: 450px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#sports-card img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  /* background-color: antiquewhite; */
+  opacity: 80%;
+}
+
+#sports-card button {
+  position: absolute;
+  top: 75%;
+  left: 3%;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: #28282b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: fit-content;
+  margin-top: 10px;
+}
+
+#sports-card button:hover {
+  cursor: pointer;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 800ms;
+  scale: 1.05;
+}
+
+/* Classic Spotlight */
+
+#classic-spotlight {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 100px;
+  padding-bottom: 20px;
+}
+
+#classic-spotlight h1 {
+  font-size: 30px;
+}
+
+.scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 30px;
+}
+
+.scroll::-webkit-scrollbar {
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Background color of the track */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+  border: 2px solid #f4f4f4; /* Space around the thumb for contrast */
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker thumb on hover */
+}
+
+.classic-card {
+  /* width: 300px;  */
+  height: 320px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  object-fit: cover;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
+}
+
+.classic-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+
+#footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: start;
+  /* justify-content:center; */
+  padding-left: 100px;
+  gap: 200px;
+  padding: 100px 100px;
+}
+
+#footer-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#footer-columns h1 {
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+.footer-menu {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #888;
+  font-weight: 600;
+}
+
+.footer-menu p {
+  margin: 0;
+}
